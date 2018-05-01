@@ -72,24 +72,6 @@
 
 
 
-            <nav>
-                    <ul>
-                        <li><a href="{{ route('main') }}">Guest Page</a></li>
-                        <li><a href="{{ route('user') }}">User</a></li>
-                        <li><a href="{{ route('admin') }}">Admin</a></li>
-                        <span id="separator"></span>
-                        @if(!Auth::check())
-                            <li><a href="{{ route('signup') }}">Sign Up</a></li>
-                            <li><a href="{{ route('signin') }}">Sign In</a></li>
-                        @else
-                            <li><a href="{{ route('logout') }}">Logout</a></li>
-                        @endif
-                    </ul>
-                </nav>
-
-
-
-
         </p>
     </div>
 </div>

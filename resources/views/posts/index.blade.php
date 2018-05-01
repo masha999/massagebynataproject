@@ -16,8 +16,10 @@
 	</div>
 	@if(count($posts) > 1)
 		@foreach($posts as $post)
-			<div class="well" style="width: 800px; margin-left: 300px; margin-top: 30px;">
+			<div class="well" style="width: 800px; margin-left: 300px; margin-top: 30px; margin: auto;">
 				<h3><a href="/posts/{{ $post->id }}">{{ $post->title }}</a></h3>
+				{{ $post->body }}
+				<hr>
 				<small>Written on {{ $post->created_at }}</small>
 			</div>
 		@endforeach

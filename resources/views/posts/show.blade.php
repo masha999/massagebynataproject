@@ -14,7 +14,7 @@
 			</div>
 		</div>
     </div>
-    <div class="mypost" style="width: 800px; margin-left: 300px; margin-top: 30px;">
+    <div class="mypost" style="width: 800px; margin-left: 300px; margin-top: 30px; margin: auto;">
         <a href="/posts"><button class="btn btn-info">Go Back</button></a>
         <h1>{{ $post->title }}</h1>
         <div>

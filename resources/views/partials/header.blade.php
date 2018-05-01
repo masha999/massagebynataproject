@@ -34,9 +34,11 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     Welcome, {{ Auth::user()->first_name }} <span class="caret"></span>
                                 </a>
-
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        <a href="{{ route('admin') }}">Admin Dashboard</a>
+                                        <span id="separator"></span>
+
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
